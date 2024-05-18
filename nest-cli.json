@@ -26,6 +26,15 @@
       "compilerOptions": {
         "tsConfigPath": "apps/iam-ms/tsconfig.app.json"
       }
+    },
+    "shared-library": {
+      "type": "library",
+      "root": "shared-library",
+      "entryFile": "index",
+      "sourceRoot": "shared-library/src",
+      "compilerOptions": {
+        "tsConfigPath": "shared-library/tsconfig.lib.json"
+      }
     }
   }
 }
