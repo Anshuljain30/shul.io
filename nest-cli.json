@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/shul.io/src",
+  "monorepo": true,
+  "root": "apps/shul.io",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/shul.io/tsconfig.app.json"
+  },
+  "projects": {
+    "shul.io": {
+      "type": "application",
+      "root": "apps/shul.io",
+      "entryFile": "main",
+      "sourceRoot": "apps/shul.io/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/shul.io/tsconfig.app.json"
+      }
+    },
+    "iam-ms": {
+      "type": "application",
+      "root": "apps/iam-ms",
+      "entryFile": "main",
+      "sourceRoot": "apps/iam-ms/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/iam-ms/tsconfig.app.json"
+      }
+    }
+  }
+}
